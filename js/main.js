@@ -39,15 +39,10 @@ let volume = 0.5;      // Volumen inicial (0.0 - 1.0)
 let characters       = {};          // Objeto cargado desde characters.json
 let currentCharacter = "char1";     // Clave del personaje actualmente en pantalla
 let currentModelKey  = null;        // Clave del modelo actualmente activo
-
-// --- Opciones de animación ---
-let useAltAnim = true; // Si true, usa animIndex 0; si false, usa animIndex 1
+let useAltAnim       = true;        // Si true, usa animIndex 0; si false, usa animIndex 1
 
 // --- Modo aleatorio ---
-let randomOnStart  = false;  // Si al iniciar se elige un personaje al azar
-let randomLoop     = false;  // Si se cambia de personaje automáticamente cada X minutos
-let randomInterval = 30;     // Intervalo en minutos para el cambio automático
-let randomTimer    = null;   // Referencia al setInterval del modo aleatorio
+// Eliminado: randomOnStart, randomLoop, randomInterval, randomTimer
 
 // --- Fondo ---
 let currentBgKey = "bg1";   // Último fondo predefinido seleccionado
@@ -61,6 +56,9 @@ let loopRunning  = false;  // Evita que se arranquen múltiples loops en paralel
 const MODEL_CACHE_LIMIT = 10;        // Máximo de modelos en caché
 const modelCache        = new Map(); // Caché: key → { skel, atlas, img }
 const modelCacheOrder   = [];        // Orden de inserción para descartar el más antiguo
+
+// --- Drag scroll ---
+let dragScrollInitialized = false; // Evita acumular listeners de document
 
 // --- Mapa de fondos predefinidos ---
 const BG_MAP = {
@@ -108,6 +106,8 @@ function resize() {
   const w      = window.innerWidth;
   const h      = window.innerHeight;
 
+  canvas.style.width  = w + 'px';
+  canvas.style.height = h + 'px';
   canvas.width  = w * dpr;
   canvas.height = h * dpr;
 
@@ -121,8 +121,8 @@ function resize() {
     spSkeleton.getBounds(offset, size, []);
 
     baseScale = Math.min(
-      canvas.clientWidth  / (size.x * 1.5),
-      canvas.clientHeight / (size.y * 1.5)
+      canvas.clientWidth  / size.x,
+      canvas.clientHeight / size.y
     );
   }
 }
@@ -197,21 +197,18 @@ function initSpine(skelBuf, atlasText, img) {
   // Arrancar el loop solo si no está corriendo ya
   if (!loopRunning) {
     loopRunning = true;
-    setTimeout(loop, frameDelay);
+    requestAnimationFrame(loop);
   }
 }
 
 
 // ================================================================
 //  LOOP DE RENDERIZADO
-//  Usa setTimeout para limitar FPS sin desperdiciar CPU.
+//  Usa requestAnimationFrame para renderizar continuamente.
 // ================================================================
-let fpsLimit   = 60;
-let frameDelay = 1000 / fpsLimit;
-
 function loop() {
   if (!spRenderer || !spSkeleton || !spAnimState) {
-    setTimeout(loop, frameDelay);
+    requestAnimationFrame(loop);
     return;
   }
 
@@ -241,7 +238,7 @@ function loop() {
   spRenderer.drawSkeleton(spSkeleton, true);
   spRenderer.end();
 
-  setTimeout(loop, frameDelay);
+  requestAnimationFrame(loop);
 }
 
 
@@ -383,6 +380,9 @@ async function loadModel(model) {
 
   } catch (e) {
     console.error("Error cargando modelo:", e);
+    // Restaurar opacity si falla
+    const canvas = document.getElementById("c");
+    canvas.style.opacity = 1;
   }
 }
 
@@ -396,42 +396,51 @@ async function loadCharactersConfig() {
     characters = await data.json();
   } catch (e) {
     console.error("Error cargando characters.json:", e);
+    alert("Error cargando configuración de personajes. Revisa la consola para más detalles.");
+    characters = {}; // Fallback vacío
   }
 }
 
 
 // ================================================================
 //  DRAG TO SCROLL
-//  Permite hacer scroll en #charList arrastrando con el mouse.
+//  Permite hacer scroll en listas arrastrando con el mouse.
 // ================================================================
 function enableDragScroll(element) {
-  let isDragging  = false;
-  let startY      = 0;
-  let startScroll = 0;
-
+  // Añadir mousedown al element
   element.addEventListener("mousedown", (e) => {
-    isDragging              = true;
-    startY                  = e.clientY;
-    startScroll             = element.scrollTop;
-    element.style.cursor    = "grabbing";
+    if (element.dataset.isDragging === "true") return;
+    element.dataset.isDragging = "true";
+    element.dataset.startY = e.clientY.toString();
+    element.dataset.startScroll = element.scrollTop.toString();
+    element.style.cursor = "grabbing";
     element.dataset.dragged = "false";
     e.preventDefault();
   });
 
-  document.addEventListener("mousemove", (e) => {
-    if (!isDragging) return;
-    const delta = e.clientY - startY;
-    if (Math.abs(delta) > 5) {
-      element.dataset.dragged = "true";
-    }
-    element.scrollTop = startScroll - delta;
-  });
+  if (!dragScrollInitialized) {
+    dragScrollInitialized = true;
+    document.addEventListener("mousemove", (e) => {
+      const draggingElement = document.querySelector('[data-is-dragging="true"]');
+      if (!draggingElement) return;
+      const startY = parseFloat(draggingElement.dataset.startY);
+      const startScroll = parseFloat(draggingElement.dataset.startScroll);
+      const delta = e.clientY - startY;
+      if (Math.abs(delta) > 5) {
+        draggingElement.dataset.dragged = "true";
+      }
+      draggingElement.scrollTop = startScroll - delta;
+      e.preventDefault(); // Evita selección de texto durante drag
+    });
 
-  document.addEventListener("mouseup", () => {
-    if (!isDragging) return;
-    isDragging           = false;
-    element.style.cursor = "grab";
-  });
+    document.addEventListener("mouseup", () => {
+      const draggingElement = document.querySelector('[data-is-dragging="true"]');
+      if (draggingElement) {
+        draggingElement.dataset.isDragging = "false";
+        draggingElement.style.cursor = "grab";
+      }
+    });
+  }
 
   element.style.cursor = "grab";
 }
@@ -550,7 +559,7 @@ function buildModelList(charKey) {
 
     div.onclick = () => {
       currentModelKey = key;
-      loadModel(model, key);
+      loadModel(model);
 
       saved[charKey] = key;
       localStorage.setItem("lastModels", JSON.stringify(saved));
@@ -575,31 +584,30 @@ function buildModelList(charKey) {
 //  Se reconstruye al cambiar de modelo o de animación.
 // ================================================================
 function buildAnimList() {
-  // Eliminar sección anterior si existía
-  const existing = document.getElementById("animSection");
-  if (existing) existing.remove();
+  const section = document.getElementById("animSection");
+  if (!section) return;
 
-  if (!animList || animList.length === 0) return;
+  const style = window.getComputedStyle(section);
+  const rect = section.getBoundingClientRect();
+  
+  section.innerHTML = "";
 
-  const container = document.getElementById("listsWrapper");
+  if (!animList || animList.length === 0) {
+    return;
+  }
 
-  const section = document.createElement("div");
-  section.id = "animSection";
-
-  // Si modelList está visible (estamos en armario), mostrar animSection; sino, ocultarlo
   const modelList = document.getElementById("modelList");
   if (modelList && modelList.classList.contains("visibleView")) {
     section.classList.add("visibleView");
+    section.classList.remove("hiddenView");
+    document.getElementById("AnimTitle")?.classList.add("visibleView");
+    document.getElementById("AnimTitle")?.classList.remove("hiddenView");
   } else {
     section.classList.add("hiddenView");
+    section.classList.remove("visibleView");
+    document.getElementById("AnimTitle")?.classList.add("hiddenView");
+    document.getElementById("AnimTitle")?.classList.remove("visibleView");
   }
-
-  // Separador con label
-  const divider = document.createElement("div");
-  divider.className = "animDivider";
-  divider.innerText = "Animaciones";
-  divider.style.visibility = "hidden";
-  section.appendChild(divider);
 
   animList.forEach((name, index) => {
     const item = document.createElement("div");
@@ -616,7 +624,7 @@ function buildAnimList() {
     section.appendChild(item);
   });
 
-  container.appendChild(section);
+  enableDragScroll(section);
 }
 
 
@@ -651,14 +659,14 @@ function selectCharacter(key) {
 
   if (modelKey && characters[key].models[modelKey]) {
     currentModelKey = modelKey;
-    loadModel(characters[key].models[modelKey], modelKey);
+    loadModel(characters[key].models[modelKey]);
   } else {
     const firstKey = Object.keys(characters[key].models)[0];
     const firstModel = characters[key].models[firstKey];
     saved[key] = firstKey;
     localStorage.setItem("lastModels", JSON.stringify(saved));
     currentModelKey = firstKey;
-    loadModel(firstModel, firstKey);
+    loadModel(firstModel);
   }
 }
 
@@ -672,12 +680,16 @@ function showCharacters() {
   document.getElementById("charList").classList.remove("hiddenView");
   document.getElementById("charList").classList.add("visibleView");
   const animSection = document.getElementById("animSection");
-  animSection.classList.remove("visibleView");
-  animSection.classList.add("hiddenView");
+  if (animSection) {
+    animSection.classList.remove("visibleView");
+    animSection.classList.add("hiddenView");
+  }
 
   const AnimTitle = document.getElementById("AnimTitle");
-  AnimTitle.classList.remove("visibleView");
-  AnimTitle.classList.add("hiddenView");
+  if (AnimTitle) {
+    AnimTitle.classList.remove("visibleView");
+    AnimTitle.classList.add("hiddenView");
+  }
   document.getElementById("listsWrapper").style.transform = "translateX(0%)";
   setMenuTitle("Heroes");
 }
@@ -688,12 +700,16 @@ function showWardrobe() {
   document.getElementById("charList").classList.remove("visibleView");
   document.getElementById("charList").classList.add("hiddenView");
   const animSection = document.getElementById("animSection");
-  animSection.classList.remove("hiddenView");
-  animSection.classList.add("visibleView");
+  if (animSection) {
+    animSection.classList.remove("hiddenView");
+    animSection.classList.add("visibleView");
+  }
 
   const AnimTitle = document.getElementById("AnimTitle");
-  AnimTitle.classList.remove("hiddenView");
-  AnimTitle.classList.add("visibleView");
+  if (AnimTitle) {
+    AnimTitle.classList.remove("hiddenView");
+    AnimTitle.classList.add("visibleView");
+  }
   document.getElementById("listsWrapper").style.transform = "translateX(-100%)";
   buildModelList(currentCharacter);
   setMenuTitle("Armario");
@@ -727,7 +743,7 @@ function initSettingsPanel() {
   // --- Abrir / cerrar panel ---
   settingBtn.onclick = () => {
     const isOpen = panel.classList.toggle("open");
-    settingBtn.innerText = isOpen ? "✕" : "⚙";
+    settingBtn.textContent = isOpen ? "✕" : "⚙";
   };
 
   // --- Helpers ---
@@ -842,6 +858,7 @@ function initSettingsPanel() {
   const volumeValEl = document.getElementById("cfg-volumeVal");
   volume            = parseFloat(volumeEl.value);
   volumeValEl.innerText = Math.round(volume * 100) + "%";
+  if (music) music.volume = volume; // Aplicar volumen restaurado
   volumeEl.oninput = () => {
     volume = parseFloat(volumeEl.value);
     volumeValEl.innerText = Math.round(volume * 100) + "%";
@@ -912,9 +929,8 @@ window.onload = async () => {
   // Decidir qué personaje cargar al inicio
   const savedChar = localStorage.getItem("lastCharacter");
 
-  if (randomOnStart) {
-    pickRandomCharacter();                            // Aleatorio
-  } else if (savedChar && characters[savedChar]) {
+  // Eliminado: randomOnStart check
+  if (savedChar && characters[savedChar]) {
     selectCharacter(savedChar);                       // Último guardado
   } else {
     const firstChar = Object.keys(characters)[0];
@@ -941,7 +957,7 @@ window.onload = async () => {
   // --- Audio ---
   music        = new Audio("assets/audio/music.wav");
   music.loop   = true;
-  music.volume = volume;
+  // music.volume se setea en initSettingsPanel después de restaurar
 
   // Intentar autoplay, si falla esperar el primer click del usuario
   const tryPlay = () => {
@@ -967,16 +983,23 @@ window.onload = async () => {
 
   // Ocultar modelList al inicio
   document.getElementById("modelList").classList.add("hiddenView");
-  document.getElementById("AnimTitle").classList.add("hiddenView");
-  document.getElementById("animSection").classList.add("hiddenView");
+  document.getElementById("AnimTitle")?.classList.add("hiddenView");
+  document.getElementById("animSection")?.classList.add("hiddenView");
 
   
   // --- Inicializar panel de ajustes ---
   initSettingsPanel();
   initDragToMove();
 
+  // --- Inicializar botones de animación ---
+  document.getElementById("controls").querySelector("button:first-child").onclick = prevAnim;
+  document.getElementById("controls").querySelector("button:last-child").onclick = nextAnim;
+
   // Aplicar fondo guardado
   applyBackground();
 
   resize();
+
+  // Añadir listener para resize
+  window.addEventListener("resize", resize);
 };
