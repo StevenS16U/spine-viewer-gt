@@ -73,6 +73,30 @@ const BG_MAP = {
   bg7: "assets/bg/bg7.png",
 };
 
+const DEFAULT_BG_NAMES = {
+  bg1: "Amanecer",
+  bg2: "La aventura comienza",
+  bg3: "Valle del olvido",
+  bg4: "Fragmento onírico",
+  bg5: "Plaza de la aldea",
+  bg6: "Parque temático",
+  bg7: "Monte luna",
+};
+
+function populateBgSelect() {
+  const bgSel = document.getElementById("cfg-background");
+  if (!bgSel) return;
+
+  bgSel.innerHTML = "";
+  Object.keys(BG_MAP).forEach((key) => {
+    const option = document.createElement("option");
+    option.value = key;
+    option.textContent = DEFAULT_BG_NAMES[key] || key;
+    bgSel.appendChild(option);
+  });
+  bgSel.value = currentBgKey;
+}
+
 
 // ================================================================
 //  RESIZE
@@ -655,7 +679,6 @@ function showCharacters() {
   AnimTitle.classList.remove("visibleView");
   AnimTitle.classList.add("hiddenView");
   document.getElementById("listsWrapper").style.transform = "translateX(0%)";
-  document.getElementById("backBtn").classList.add("hidden");
   setMenuTitle("Heroes");
 }
 
@@ -672,7 +695,6 @@ function showWardrobe() {
   AnimTitle.classList.remove("hiddenView");
   AnimTitle.classList.add("visibleView");
   document.getElementById("listsWrapper").style.transform = "translateX(-100%)";
-  document.getElementById("backBtn").classList.remove("hidden");
   buildModelList(currentCharacter);
   setMenuTitle("Armario");
 }
@@ -726,8 +748,10 @@ function initSettingsPanel() {
   }
 
   // --- Fondo predefinido ---
-  const bgSel = restoreInput("cfg-background", "cfg-background", "bg1");
-  currentBgKey = bgSel.value;
+  const bgSel = document.getElementById("cfg-background");
+  currentBgKey = localStorage.getItem("cfg-background") || "bg1";
+  populateBgSelect();
+  bgSel.value = currentBgKey;
   bgSel.onchange = () => {
     currentBgKey = bgSel.value;
     localStorage.setItem("cfg-background", currentBgKey);
@@ -796,27 +820,11 @@ function initSettingsPanel() {
     localStorage.setItem("cfg-zoom", userZoom);
   };
 
-  // --- Posición horizontal ---
-  const posxEl    = restoreInput("cfg-posx", "cfg-posx", 0);
-  const posxValEl = document.getElementById("cfg-posxVal");
-  offsetX         = parseFloat(posxEl.value);
-  posxValEl.innerText = posxEl.value;
-  posxEl.oninput = () => {
-    offsetX = parseFloat(posxEl.value);
-    posxValEl.innerText = posxEl.value;
-    localStorage.setItem("cfg-posx", offsetX);
-  };
-
-  // --- Posición vertical ---
-  const posyEl    = restoreInput("cfg-posy", "cfg-posy", 0);
-  const posyValEl = document.getElementById("cfg-posyVal");
-  offsetY         = parseFloat(posyEl.value);
-  posyValEl.innerText = posyEl.value;
-  posyEl.oninput = () => {
-    offsetY = parseFloat(posyEl.value);
-    posyValEl.innerText = posyEl.value;
-    localStorage.setItem("cfg-posy", offsetY);
-  };
+  // --- Restaurar posición almacenada ---
+  const storedPosX = localStorage.getItem("cfg-posx");
+  const storedPosY = localStorage.getItem("cfg-posy");
+  if (storedPosX !== null) offsetX = parseFloat(storedPosX);
+  if (storedPosY !== null) offsetY = parseFloat(storedPosY);
 
   // --- Loop de animación ---
   const loopEl = restoreCheck("cfg-loop", "cfg-loop", true);
@@ -840,6 +848,52 @@ function initSettingsPanel() {
     localStorage.setItem("cfg-volume", volume);
     if (music) music.volume = volume;
   };
+}
+
+function initDragToMove() {
+  const canvas = document.getElementById("c");
+  if (!canvas) return;
+
+  let dragging      = false;
+  let startX        = 0;
+  let startY        = 0;
+  let startOffsetX  = 0;
+  let startOffsetY  = 0;
+
+  canvas.style.touchAction = "none";
+  canvas.style.cursor = "grab";
+
+  canvas.addEventListener("pointerdown", (e) => {
+    if (e.button !== 0) return;
+    dragging = true;
+    startX = e.clientX;
+    startY = e.clientY;
+    startOffsetX = offsetX;
+    startOffsetY = offsetY;
+    canvas.setPointerCapture(e.pointerId);
+    canvas.style.cursor = "grabbing";
+  });
+
+  canvas.addEventListener("pointermove", (e) => {
+    if (!dragging) return;
+    const dx = e.clientX - startX;
+    const dy = e.clientY - startY;
+    offsetX = startOffsetX + dx;
+    offsetY = startOffsetY - dy;
+    localStorage.setItem("cfg-posx", offsetX);
+    localStorage.setItem("cfg-posy", offsetY);
+  });
+
+  const stopDrag = (e) => {
+    if (!dragging) return;
+    dragging = false;
+    canvas.style.cursor = "grab";
+    if (e.pointerId) canvas.releasePointerCapture(e.pointerId);
+  };
+
+  canvas.addEventListener("pointerup", stopDrag);
+  canvas.addEventListener("pointercancel", stopDrag);
+  canvas.addEventListener("pointerleave", stopDrag);
 }
 
 
@@ -902,8 +956,14 @@ window.onload = async () => {
   });
 
   // --- Botones del menú ---
-  document.getElementById("wardrobeBtn").onclick = () => { showWardrobe(); };
-  document.getElementById("backBtn").onclick     = () => { showCharacters(); };
+  document.getElementById("wardrobeBtn").onclick = () => {
+    const modelList = document.getElementById("modelList");
+    if (modelList.classList.contains("visibleView")) {
+      showCharacters();
+    } else {
+      showWardrobe();
+    }
+  };
 
   // Ocultar modelList al inicio
   document.getElementById("modelList").classList.add("hiddenView");
@@ -913,6 +973,7 @@ window.onload = async () => {
   
   // --- Inicializar panel de ajustes ---
   initSettingsPanel();
+  initDragToMove();
 
   // Aplicar fondo guardado
   applyBackground();

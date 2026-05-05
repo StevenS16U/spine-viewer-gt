@@ -18,7 +18,7 @@
   <!-- ============================================================
     CANVAS WEBGL
     Aquí se renderiza el esqueleto Spine.
-    pointer-events: none para no bloquear clicks del UI.
+    Se puede arrastrar sobre el lienzo para mover al personaje.
   ============================================================ -->
   <canvas id="c"></canvas>
 
@@ -52,15 +52,7 @@
       <!-- Fondo predefinido -->
       <div class="settingsGroup">
         <label>Fondo</label>
-        <select id="cfg-background">
-          <option value="bg1">Fondo 1</option>
-          <option value="bg2">Fondo 2</option>
-          <option value="bg3">Fondo 3</option>
-          <option value="bg4">Fondo 4</option>
-          <option value="bg5">Fondo 5</option>
-          <option value="bg6">Fondo 6</option>
-          <option value="bg7">Fondo 7</option>
-        </select>
+        <select id="cfg-background"></select>
       </div>
 
       <!-- Fondo personalizado -->
@@ -97,19 +89,12 @@
       <!-- Zoom -->
       <div class="settingsGroup">
         <label>Zoom <span class="sliderVal" id="cfg-zoomVal">1.0</span></label>
-        <input type="range" id="cfg-zoom" min="0.5" max="3" step="0.1" value="1">
+        <input type="range" id="cfg-zoom" min="0.5" max="5" step="0.1" value="1">
       </div>
 
-      <!-- Posición horizontal -->
       <div class="settingsGroup">
-        <label>Posición horizontal <span class="sliderVal" id="cfg-posxVal">0</span></label>
-        <input type="range" id="cfg-posx" min="-500" max="500" step="10" value="0">
-      </div>
-
-      <!-- Posición vertical -->
-      <div class="settingsGroup">
-        <label>Posición vertical <span class="sliderVal" id="cfg-posyVal">0</span></label>
-        <input type="range" id="cfg-posy" min="-500" max="500" step="10" value="0">
+        <label>Mover personaje</label>
+        <span class="fileHint">Pulsa y arrastra en el lienzo para reposicionar al héroe.</span>
       </div>
 
       <hr class="settingsDivider">
@@ -161,9 +146,6 @@
           <h3 id="AnimTitle">Animaciones</h3>
         </div>
       </div>
-
-      <!-- Botón volver al armario -->
-      <div id="backBtn" class="hidden">← Atrás</div>
 
     </div>
   </div>
