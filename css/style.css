@@ -1,0 +1,561 @@
+/* ================================================================
+  RESET BASE
+================================================================ */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+/* ================================================================
+  FUENTE PERSONALIZADA
+================================================================ */
+@font-face {
+  font-family: 'GameFont';
+  src: url('../assets/fonts/myfont.ttf');
+}
+
+
+/* ================================================================
+  FONDO (#bg)
+================================================================ */
+#bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* ================================================================
+  CANVAS WEBGL
+================================================================ */
+canvas {
+  image-rendering: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+#c {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+/* ================================================================
+  TARJETAS DE PERSONAJE (.charCard)
+================================================================ */
+.charCard {
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  background: rgb(163 164 170);
+  transition: transform 0.2s, border 0.2s;
+  border: 3px solid rgb(201 202 206);
+}
+
+.charCard:hover {
+  transform: scale(1.05);
+}
+
+/* Estado: personaje actualmente seleccionado */
+.charCard.selected {
+  border: 3px solid #4da6ff;
+  box-shadow: 0 0 10px #4da6ff;
+  transform: scale(1.05);
+}
+
+/* Estado: modelo actualmente seleccionado (igual que personaje pero blanco) */
+.charCard.modelSelected {
+  border: 3px solid #cda059;
+  box-shadow: 0 0 10px #cd870a;
+  transform: scale(1.05);
+}
+
+
+/* ================================================================
+  LISTA DE ANIMACIONES (#animList)
+  Aparece debajo de las tarjetas de modelos en la vista del armario.
+================================================================ */
+#animSection {
+  position: fixed;
+  left: 100%;
+  top: 55%;
+  margin-top: 14px;
+  gap: 6px;
+  padding: 0 2px;
+}
+
+#animSection .animDivider {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.35);
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.animItem {
+  padding: 7px 12px;
+  border-radius: 5px;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.15s, color 0.15s, background 0.15s;
+}
+
+.animItem:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+/* Animación actualmente activa */
+.animItem.active {
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  color: white;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+#AnimTitle {
+  position: fixed;
+  left: 100%;
+  top: 50%;
+
+  font-family: 'GameFont';
+  font-size: 24px;
+  font-weight: 100;
+
+  z-index: 5;
+}
+
+
+/* ================================================================
+  CONTROLES DE ANIMACIÓN (#controls)
+  Suben desde abajo cuando el menú lateral se abre.
+================================================================ */
+#controls {
+  position: fixed;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%) translateY(120px);
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 8px 12px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  pointer-events: none;
+}
+
+#controls.visible {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.btn {
+  background: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+
+/* ================================================================
+  UTILIDADES
+================================================================ */
+.hidden {
+  display: none !important;
+}
+
+
+/* ================================================================
+  BOTÓN DE AJUSTES (#settingsBtn)
+  Tuerca fija en la esquina superior derecha, siempre visible.
+  z-index: 10000 → encima de todo incluyendo el panel lateral.
+================================================================ */
+#settingsBtn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 10000;
+  transition: transform 0.2s, background 0.2s;
+  user-select: none;
+}
+
+#settingsBtn:hover {
+  transform: scale(1.1);
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* Cuando el panel está abierto el botón muestra una X */
+#settingsBtn.open {
+  content: "✕";
+}
+
+
+/* ================================================================
+  PANEL DE AJUSTES (#settingsPanel)
+  Entra desde la derecha. Mismo estilo visual que el menú lateral.
+  z-index: 9998 → debajo del botón de tuerca pero encima de todo lo demás.
+================================================================ */
+#settingsPanel {
+  position: fixed;
+  right: -340px;          /* oculto por defecto */
+  top: 0;
+  width: 320px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(10px);
+  transition: right 0.5s ease;
+  z-index: 9998;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+#settingsPanel::-webkit-scrollbar {
+  display: none;
+}
+
+#settingsPanel.open {
+  right: 0;
+}
+
+/* Contenido interior con padding */
+#settingsContent {
+  padding: 20px 20px 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 55px;     /* espacio para no solaparse con el botón de tuerca */
+}
+
+/* Título del panel */
+.settingsTitle {
+  font-family: 'GameFont';
+  font-size: 22px;
+  font-weight: 100;
+  margin: 0 0 4px 0;
+}
+
+/* Separador entre secciones */
+.settingsDivider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin: 4px 0;
+}
+
+/* Grupo de control: label + input apilados */
+.settingsGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Variante fila: label + checkbox en la misma línea */
+.settingsGroup.settingsRow {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Etiqueta de cada control */
+.settingsGroup label {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Valor numérico junto al label del slider */
+.sliderVal {
+  color: #4da6ff;
+  font-weight: bold;
+  min-width: 36px;
+  text-align: right;
+}
+
+/* Sliders */
+.settingsGroup input[type="range"] {
+  width: 100%;
+  accent-color: #4da6ff;
+  cursor: pointer;
+}
+
+/* Selects */
+.settingsGroup select {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.settingsGroup select option {
+  background: #1a1a2e;
+  color: white;
+}
+
+/* Checkboxes */
+.settingsGroup input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #4da6ff;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Fila del file picker */
+.fileRow {
+  display: flex;
+  gap: 8px;
+}
+
+/* Botón genérico del panel */
+.fileBtn {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  flex: 1;
+}
+
+.fileBtn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Botón de limpiar (rojo) */
+.fileBtn.danger {
+  flex: 0;
+  background: rgba(220, 50, 50, 0.4);
+  border-color: rgba(220, 50, 50, 0.5);
+}
+
+.fileBtn.danger:hover {
+  background: rgba(220, 50, 50, 0.7);
+}
+
+/* Nombre del archivo elegido */
+.fileHint {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.45);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* ================================================================
+  MENÚ LATERAL (#sideMenu)
+  En standalone siempre está disponible (no tiene clase .hidden inicial).
+================================================================ */
+#sideMenu {
+  position: fixed;
+  left: -330px;
+  top: 0;
+  width: 330px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  transition: left 0.5s ease;
+  z-index: 9999;
+}
+
+#sideMenu.open {
+  left: 0;
+}
+
+
+/* ================================================================
+  BOTÓN TOGGLE DEL MENÚ (#toggleBtn)
+================================================================ */
+#toggleBtn {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+
+/* ================================================================
+  CONTENIDO INTERIOR DEL MENÚ (#menuContent)
+================================================================ */
+#menuContent {
+  padding: 15px;
+  padding-top: 70px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  padding: 8px;
+  margin: 5px 0;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+
+/* ================================================================
+  BOTÓN ARMARIO (#wardrobeBtn)
+================================================================ */
+#wardrobeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  background-image: url('../assets/icons/armario.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 5;
+}
+
+#wardrobeBtn:hover {
+  transform: scale(1.1);
+  transition: transform 0.1s;
+}
+
+
+/* ================================================================
+  BOTÓN VOLVER (#backBtn)
+================================================================ */
+#backBtn {
+  margin-top: -30px;
+  padding: 10px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+#backBtn:hover {
+  background: rgba(0, 0, 0, 0.6);
+  transition: 0.2s;
+}
+
+
+/* ================================================================
+  SISTEMA DE VISTAS (slide horizontal)
+================================================================ */
+#viewport {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+  max-height: calc(100vh - 160px);
+}
+
+#charList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  overflow-y: scroll;
+  max-height: calc(100vh - 160px);
+  scrollbar-width: none;
+  padding: 15px 15px 20px;
+  box-sizing: border-box;
+}
+
+#charList::-webkit-scrollbar {
+  display: none;
+}
+
+#modelList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  padding: 15px 15px 15px;
+  box-sizing: border-box;
+}
+
+#listsWrapper {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease;
+  align-items: flex-start;
+}
+
+.view {
+  min-width: 100%;
+  display: block;
+}
+
+.hiddenView {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.visibleView {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+/* ================================================================
+  TÍTULO DEL MENÚ (#menuTitle)
+================================================================ */
+#menuTitle {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  font-family: 'GameFont';
+  font-size: 24px;
+  font-weight: 100;
+  transition: opacity 0.1s ease;
+  z-index: 5;
+}

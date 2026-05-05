@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Guardian Tales Viewer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ============================================================
+    FONDO
+    Div que muestra la imagen de fondo o color sólido.
+    Controlado desde el panel de ajustes.
+  ============================================================ -->
+  <div id="bg"></div>
+
+  <!-- ============================================================
+    CANVAS WEBGL
+    Aquí se renderiza el esqueleto Spine.
+    pointer-events: none para no bloquear clicks del UI.
+  ============================================================ -->
+  <canvas id="c"></canvas>
+
+  <!-- ============================================================
+    CONTROLES DE ANIMACIÓN
+    Botones para pasar a la animación anterior / siguiente.
+    Suben desde abajo cuando el menú lateral está abierto.
+  ============================================================ -->
+  <div id="controls">
+    <button class="btn" onclick="prevAnim()">⟨</button>
+    <button class="btn" onclick="nextAnim()">⟩</button>
+  </div>
+
+  <!-- ============================================================
+    BOTÓN DE AJUSTES (tuerca)
+    Fijo en la esquina superior derecha, siempre visible.
+    Al pulsar abre/cierra el panel de ajustes desde la derecha.
+  ============================================================ -->
+  <div id="settingsBtn">⚙</div>
+
+  <!-- ============================================================
+    PANEL DE AJUSTES (#settingsPanel)
+    Entra desde la derecha al pulsar el botón de tuerca.
+    Contiene todos los controles equivalentes a los de WE.
+  ============================================================ -->
+  <div id="settingsPanel">
+    <div id="settingsContent">
+
+      <h3 class="settingsTitle">Ajustes</h3>
+
+      <!-- Fondo predefinido -->
+      <div class="settingsGroup">
+        <label>Fondo</label>
+        <select id="cfg-background">
+          <option value="bg1">Fondo 1</option>
+          <option value="bg2">Fondo 2</option>
+          <option value="bg3">Fondo 3</option>
+          <option value="bg4">Fondo 4</option>
+          <option value="bg5">Fondo 5</option>
+          <option value="bg6">Fondo 6</option>
+          <option value="bg7">Fondo 7</option>
+        </select>
+      </div>
+
+      <!-- Fondo personalizado -->
+      <div class="settingsGroup">
+        <label>Fondo personalizado</label>
+        <div class="fileRow">
+          <button class="fileBtn" id="cfg-customBgBtn">Elegir imagen</button>
+          <button class="fileBtn danger" id="cfg-customBgClear">✕</button>
+        </div>
+        <input type="file" id="cfg-customBgInput" accept="image/*" style="display:none">
+        <span class="fileHint" id="cfg-customBgName">Ninguna</span>
+      </div>
+
+      <!-- Ajuste del fondo -->
+      <div class="settingsGroup">
+        <label>Ajuste del fondo</label>
+        <select id="cfg-bgFit">
+          <option value="cover">Rellenar</option>
+          <option value="contain">Ajustar</option>
+          <option value="stretch">Expandir</option>
+          <option value="center">Centro</option>
+          <option value="repeat">Distribuir</option>
+        </select>
+      </div>
+
+      <hr class="settingsDivider">
+
+      <!-- Velocidad de animación -->
+      <div class="settingsGroup">
+        <label>Velocidad <span class="sliderVal" id="cfg-speedVal">1.0</span></label>
+        <input type="range" id="cfg-speed" min="0.1" max="3" step="0.1" value="1">
+      </div>
+
+      <!-- Zoom -->
+      <div class="settingsGroup">
+        <label>Zoom <span class="sliderVal" id="cfg-zoomVal">1.0</span></label>
+        <input type="range" id="cfg-zoom" min="0.5" max="3" step="0.1" value="1">
+      </div>
+
+      <!-- Posición horizontal -->
+      <div class="settingsGroup">
+        <label>Posición horizontal <span class="sliderVal" id="cfg-posxVal">0</span></label>
+        <input type="range" id="cfg-posx" min="-500" max="500" step="10" value="0">
+      </div>
+
+      <!-- Posición vertical -->
+      <div class="settingsGroup">
+        <label>Posición vertical <span class="sliderVal" id="cfg-posyVal">0</span></label>
+        <input type="range" id="cfg-posy" min="-500" max="500" step="10" value="0">
+      </div>
+
+      <hr class="settingsDivider">
+
+      <!-- Loop de animación -->
+      <div class="settingsGroup settingsRow">
+        <label>Loop de animación</label>
+        <input type="checkbox" id="cfg-loop" checked>
+      </div>
+
+      <hr class="settingsDivider">
+
+      <!-- Volumen de música -->
+      <div class="settingsGroup">
+        <label>Volumen música <span class="sliderVal" id="cfg-volumeVal">50%</span></label>
+        <input type="range" id="cfg-volume" min="0" max="1" step="0.05" value="0.5">
+      </div>
+
+      <hr class="settingsDivider">
+
+    </div>
+  </div>
+
+  <!-- ============================================================
+    MENÚ LATERAL DE PERSONAJES (#sideMenu)
+    Panel deslizable desde la izquierda.
+    En la versión standalone siempre está disponible (no depende de showUI).
+  ============================================================ -->
+  <div id="sideMenu">
+
+    <!-- Botón que abre/cierra el panel lateral -->
+    <div id="toggleBtn">▶</div>
+
+    <!-- Botón del armario -->
+    <div id="wardrobeBtn"></div>
+
+    <!-- Contenido interior del menú -->
+    <div id="menuContent">
+
+      <!-- Título dinámico -->
+      <h3 id="menuTitle">Heroes</h3>
+
+      <!-- Slide horizontal entre lista de personajes y modelos -->
+      <div id="viewport">
+        <div id="listsWrapper">
+          <div id="charList" class="view"></div>
+          <div id="modelList" class="view"></div>
+          <div id="animSection" class="view"></div>
+          <h3 id="AnimTitle">Animaciones</h3>
+        </div>
+      </div>
+
+      <!-- Botón volver al armario -->
+      <div id="backBtn" class="hidden">← Atrás</div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================
+    SCRIPTS
+  ============================================================ -->
+  <script src="spine-webgl.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

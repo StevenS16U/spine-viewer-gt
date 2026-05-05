@@ -1,0 +1,4532 @@
+{
+  "char1": {
+    "name": "Eunha",
+    "order": 64,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 512,
+          "y": 1433,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/eunha/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/eunha/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/eunha/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 614,
+          "y": 1535,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/eunha/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/eunha/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/eunha/illust_myth/spine.png"
+      }
+    }
+  },
+
+  "char2": {
+    "name": "Frieren",
+    "order": 500,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 2,
+          "y": 515,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/4_collabs/frieren/spine.skel",
+        "atlas": "assets/illust/4_collabs/frieren/spine.atlas",
+        "png": "assets/illust/4_collabs/frieren/spine.png"
+      }
+    }
+  },
+    "char3": {
+    "name": "Gabriela",
+    "order": 21,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 410,
+          "y": 5,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/gabriela/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/gabriela/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/gabriela/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 512,
+          "y": 107,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/gabriela/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/gabriela/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/gabriela/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 614,
+          "y": 209,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/gabriela/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/gabriela/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/gabriela/illust_myth/spine.png"
+      },
+      "model4": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 716,
+          "y": 311,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/gabriela/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/gabriela/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/gabriela/illust_skin/spine.png"
+      }
+    }
+  },
+    "char4": {
+    "name": "Haruka",
+    "order": 100,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1532,
+          "y": 1637,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/haruka/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/haruka/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/haruka/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1634,
+          "y": 1739,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/haruka/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/haruka/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/haruka/illust_myth/spine.png"
+      }
+    }
+  },
+    "char5": {
+    "name": "Daisy",
+    "order": 93,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 2,
+          "y": 1943,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/daisy/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/daisy/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/daisy/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 2,
+          "y": 1841,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/daisy/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/daisy/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/daisy/illust_myth/spine.png"
+      }
+    }
+  },
+    "char6": {
+    "name": "Mayreel",
+    "order": 26,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 308,
+          "y": 1943,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/mayreel/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/mayreel/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/mayreel/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 104,
+          "y": 1637,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/mayreel/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/mayreel/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/mayreel/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 2,
+          "y": 1535,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/mayreel/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/mayreel/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/mayreel/illust_skin/spine.png"
+      }
+    }
+  },
+    "char7": {
+    "name": "Marina",
+    "order": 3,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 104,
+          "y": 1943,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/marina/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/marina/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/marina/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 2,
+          "y": 1739,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/marina/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/marina/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/marina/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 104,
+          "y": 1841,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/marina/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/marina/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/marina/illust_skin/spine.png"
+      }
+    }
+  },
+    "char8": {
+    "name": "Mikke",
+    "order": 70,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 206,
+          "y": 1739,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/mikke/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/mikke/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/mikke/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 308,
+          "y": 1841,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/mikke/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/mikke/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/mikke/illust_myth/spine.png"
+      }
+    }
+  },
+    "char9": {
+    "name": "Plitvice",
+    "order": 1,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1532,
+          "y": 1433,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/plitvice/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/plitvice/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/plitvice/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1736,
+          "y": 1637,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/plitvice/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/plitvice/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/plitvice/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1634,
+          "y": 1535,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/plitvice/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/plitvice/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/plitvice/illust_skin/spine.png"
+      }
+    }
+  },
+    "char10": {
+    "name": "Lapice",
+    "order": 2,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 716,
+          "y": 5,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/lapice/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/lapice/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/lapice/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 818,
+          "y": 107,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/lapice/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/lapice/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/lapice/illust_kong/spine.png"
+      }
+    }
+  },
+    "char11": {
+    "name": "Elvira",
+    "order": 603,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 512,
+          "y": 311,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/elvira/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/elvira/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/elvira/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 716,
+          "y": 515,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/elvira/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/elvira/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/elvira/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Ascensión",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 614,
+          "y": 413,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/elvira/illust_ascent/spine.skel",
+        "atlas": "assets/illust/2_stars/elvira/illust_ascent/spine.atlas",
+        "png": "assets/illust/2_stars/elvira/illust_ascent/spine.png"
+      }
+    }
+  },
+    "char12": {
+    "name": "Arabelle",
+    "order": 4,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 818,
+          "y": 5,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/arabelle/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/arabelle/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/arabelle/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 920,
+          "y": 107,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/arabelle/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/arabelle/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/arabelle/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1022,
+          "y": 209,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/arabelle/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/arabelle/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/arabelle/illust_myth/spine.png"
+      }
+    }
+  },
+    "char13": {
+    "name": "Eva Idol",
+    "order": 5,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 206,
+          "y": 515,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/eva_idol/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/eva_idol/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/eva_idol/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 308,
+          "y": 617,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/eva_idol/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/eva_idol/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/eva_idol/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 410,
+          "y": 719,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/eva_idol/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/eva_idol/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/eva_idol/illust_myth/spine.png"
+      }
+    }
+  },
+    "char14": {
+    "name": "Bari",
+    "order": 6,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 920,
+          "y": 1535,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/bari/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/bari/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/bari/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1022,
+          "y": 1637,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/bari/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/bari/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/bari/illust_kong/spine.png"
+      }
+    }
+  },
+    "char15": {
+    "name": "Lupina",
+    "order": 7,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1838,
+          "y": 1025,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/lupina/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/lupina/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/lupina/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1940,
+          "y": 1127,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/lupina/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/lupina/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/lupina/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 920,
+          "y": 5,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/lupina/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/lupina/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/lupina/illust_skin/spine.png"
+      }
+    }
+  },
+    "char16": {
+    "name": "Randi",
+    "order": 95,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 104,
+          "y": 1535,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/Randi/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/Randi/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/Randi/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 206,
+          "y": 1637,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/Randi/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/Randi/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/Randi/illust_myth/spine.png"
+      }
+    }
+  },
+    "char17": {
+    "name": "Yun",
+    "order": 76,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 308,
+          "y": 1739,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/yun/spine.skel",
+        "atlas": "assets/illust/3_stars/yun/spine.atlas",
+        "png": "assets/illust/3_stars/yun/spine.png"
+      }
+    }
+  },
+    "char18": {
+    "name": "lynn",
+    "order": 22,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 512,
+          "y": 1841,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/lynn/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/lynn/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/lynn/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 614,
+          "y": 1943,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/lynn/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/lynn/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/lynn/illust_kong/spine.png"
+      }
+    }
+  },
+    "char19": {
+    "name": "Chun Ryeo",
+    "order": 60,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 614,
+          "y": 1841,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/chun_ryeo/spine.skel",
+        "atlas": "assets/illust/3_stars/chun_ryeo/spine.atlas",
+        "png": "assets/illust/3_stars/chun_ryeo/spine.png"
+      }
+    }
+  },
+    "char20": {
+    "name": "Tinia",
+    "order": 10,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 104,
+          "y": 1229,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/tinia/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/tinia/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/tinia/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 206,
+          "y": 1331,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/tinia/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/tinia/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/tinia/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 308,
+          "y": 1433,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/tinia/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/tinia/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/tinia/illust_skin/spine.png"
+      }
+    }
+  },
+    "char21": {
+    "name": "Lillith",
+    "order": 28,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 614,
+          "y": 1739,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/lillith/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/lillith/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/lillith/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 818,
+          "y": 1943,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/lillith/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/lillith/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/lillith/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 716,
+          "y": 1841,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/lillith/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/lillith/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/lillith/illust_skin/spine.png"
+      }
+    }
+  },
+    "char22": {
+    "name": "Erina",
+    "order": 34,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 104,
+          "y": 209,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/erina/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/erina/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/erina/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 206,
+          "y": 311,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/erina/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/erina/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/erina/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 308,
+          "y": 413,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/erina/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/erina/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/erina/illust_myth/spine.png"
+      },
+      "model4": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 410,
+          "y": 515,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/erina/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/erina/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/erina/illust_skin/spine.png"
+      }
+    }
+  },
+    "char23": {
+    "name": "lahn",
+    "order": 8,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 512,
+          "y": 617,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/lahn/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/lahn/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/lahn/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 614,
+          "y": 719,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/lahn/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/lahn/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/lahn/illust_kong/spine.png"
+      }
+    }
+  },
+    "char24": {
+    "name": "Eugene",
+    "order": 9,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 614,
+          "y": 1331,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/eugene/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/eugene/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/eugene/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 716,
+          "y": 1433,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/eugene/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/eugene/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/eugene/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 818,
+          "y": 1535,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/eugene/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/eugene/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/eugene/illust_myth/spine.png"
+      }
+    }
+  },
+    "char25": {
+    "name": "Wakamo",
+    "order": 99,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1226,
+          "y": 1841,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/wakamo/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/wakamo/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/wakamo/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1328,
+          "y": 1943,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/wakamo/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/wakamo/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/wakamo/illust_myth/spine.png"
+      }
+    }
+  },
+    "char26": {
+    "name": "Nari",
+    "order": 12,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1022,
+          "y": 1841,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/nari/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/nari/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/nari/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 2,
+          "y": 719,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/nari/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/nari/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/nari/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1124,
+          "y": 1943,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/nari/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/nari/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/nari/illust_skin/spine.png"
+      }
+    }
+  },
+    "char27": {
+    "name": "Bianca",
+    "order": 13,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1226,
+          "y": 821,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/bianca/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/bianca/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/bianca/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1328,
+          "y": 923,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/bianca/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/bianca/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/bianca/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1430,
+          "y": 1025,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/bianca/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/bianca/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/bianca/illust_myth/spine.png"
+      },
+      "model4": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1532,
+          "y": 1127,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/bianca/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/bianca/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/bianca/illust_skin/spine.png"
+      }
+    }
+  },
+    "char28": {
+    "name": "Miya",
+    "order": 16,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 2,
+          "y": 617,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/miya/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/miya/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/miya/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 104,
+          "y": 719,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/miya/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/miya/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/miya/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 206,
+          "y": 821,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/miya/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/miya/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/miya/illust_skin/spine.png"
+      }
+    }
+  },
+    "char29": {
+    "name": "Princesa futura",
+    "order": 17,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 410,
+          "y": 923,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/princesa_futura/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/princesa_futura/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/princesa_futura/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 512,
+          "y": 1025,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/princesa_futura/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/princesa_futura/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/princesa_futura/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 716,
+          "y": 1229,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/princesa_futura/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/princesa_futura/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/princesa_futura/illust_skin/spine.png"
+      },
+      "model4": {
+        "name": "Skin especial 2",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 614,
+          "y": 1127,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/princesa_futura/illust_skin2/spine.skel",
+        "atlas": "assets/illust/3_stars/princesa_futura/illust_skin2/spine.atlas",
+        "png": "assets/illust/3_stars/princesa_futura/illust_skin2/spine.png"
+      },
+      "model5": {
+        "name": "Skin especial eliminada",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 410,
+          "y": 923,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/princesa_futura/illust_skin3/spine.skel",
+        "atlas": "assets/illust/3_stars/princesa_futura/illust_skin3/spine.atlas",
+        "png": "assets/illust/3_stars/princesa_futura/illust_skin3/spine.png"
+      }
+    }
+  },
+    "char30": {
+    "name": "Sia",
+    "order": 62,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 716,
+          "y": 719,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/sia/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/sia/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/sia/illust_base/spine.png"
+      }
+    }
+  },
+    "char31": {
+    "name": "Gremory",
+    "order": 610,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1226,
+          "y": 1331,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/gremory/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/gremory/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/gremory/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1430,
+          "y": 1535,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/gremory/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/gremory/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/gremory/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Ascensión/Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1328,
+          "y": 1433,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/gremory/illust_ascent/spine.skel",
+        "atlas": "assets/illust/2_stars/gremory/illust_ascent/spine.atlas",
+        "png": "assets/illust/2_stars/gremory/illust_ascent/spine.png"
+      }
+    }
+  },
+    "char32": {
+    "name": "Yuze salvavidas",
+    "order": 31,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 716,
+          "y": 821,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/yuze_salvavidas/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/yuze_salvavidas/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/yuze_salvavidas/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 818,
+          "y": 923,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/yuze_salvavidas/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/yuze_salvavidas/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/yuze_salvavidas/illust_kong/spine.png"
+      }
+    }
+  },
+    "char33": {
+    "name": "Lucy",
+    "order": 29,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1328,
+          "y": 1535,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/lucy/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/lucy/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/lucy/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1430,
+          "y": 1637,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/lucy/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/lucy/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/lucy/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1532,
+          "y": 1739,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/lucy/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/lucy/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/lucy/illust_myth/spine.png"
+      },
+      "model4": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1634,
+          "y": 1841,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/lucy/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/lucy/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/lucy/illust_skin/spine.png"
+      }
+    }
+  },
+    "char34": {
+    "name": "Knights",
+    "order": 601,
+    "models": {
+      "model1": {
+        "name": "Ambos Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1022,
+          "y": 5,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/knights/knight_both/spine.skel",
+        "atlas": "assets/illust/2_stars/knights/knight_both/spine.atlas",
+        "png": "assets/illust/2_stars/knights/knight_both/spine.png"
+      },
+      "model2": {
+        "name": "Ambos Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1124,
+          "y": 107,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/knights/knight_both_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/knights/knight_both_kong/spine.atlas",
+        "png": "assets/illust/2_stars/knights/knight_both_kong/spine.png"
+      },
+      "model3": {
+        "name": "Global femenina anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 716,
+          "y": 923,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/knights/knight_female_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/knights/knight_female_kong/spine.atlas",
+        "png": "assets/illust/2_stars/knights/knight_female_kong/spine.png"
+      },
+      "model4": {
+        "name": "Ascensión/Mito femenina",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 614,
+          "y": 821,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/knights/knight_female_ascent/spine.skel",
+        "atlas": "assets/illust/2_stars/knights/knight_female_ascent/spine.atlas",
+        "png": "assets/illust/2_stars/knights/knight_female_ascent/spine.png"
+      },
+      "model5": {
+        "name": "Global masculino anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1022,
+          "y": 1229,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/knights/knight_male_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/knights/knight_male_kong/spine.atlas",
+        "png": "assets/illust/2_stars/knights/knight_male_kong/spine.png"
+      },
+      "model6": {
+        "name": "Ascensión/Mito masculino",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 920,
+          "y": 1127,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/knights/knight_male_ascent/spine.skel",
+        "atlas": "assets/illust/2_stars/knights/knight_male_ascent/spine.atlas",
+        "png": "assets/illust/2_stars/knights/knight_male_ascent/spine.png"
+      },
+      "model7": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 104,
+          "y": 311,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/knights/knight_autumn_wind/spine.skel",
+        "atlas": "assets/illust/2_stars/knights/knight_autumn_wind/spine.atlas",
+        "png": "assets/illust/2_stars/knights/knight_autumn_wind/spine.png"
+      },
+      "model8": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 206,
+          "y": 413,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/knights/knight_bukubu/spine.skel",
+        "atlas": "assets/illust/2_stars/knights/knight_bukubu/spine.atlas",
+        "png": "assets/illust/2_stars/knights/knight_bukubu/spine.png"
+      }
+    }
+  },
+    "char35": {
+    "name": "Beth",
+    "order": 19,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 818,
+          "y": 1127,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/beth/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/beth/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/beth/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1022,
+          "y": 1331,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/beth/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/beth/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/beth/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1124,
+          "y": 1433,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/beth/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/beth/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/beth/illust_myth/spine.png"
+      },
+      "model4": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 920,
+          "y": 1229,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/beth/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/beth/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/beth/illust_skin/spine.png"
+      }
+    }
+  },
+    "char36": {
+    "name": "Andras",
+    "order": 53,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 920,
+          "y": 1943,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/andras/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/andras/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/andras/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 2,
+          "y": 923,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/andras/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/andras/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/andras/illust_skin/spine.png"
+      }
+    }
+  },
+    "char37": {
+    "name": "Vinette",
+    "order": 67,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 2,
+          "y": 1025,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/vinette/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/vinette/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/vinette/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 104,
+          "y": 1127,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/vinette/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/vinette/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/vinette/illust_skin/spine.png"
+      }
+    }
+  },
+    "char38": {
+    "name": "Kahlor",
+    "order": 97,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 716,
+          "y": 1331,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/kahlor/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/kahlor/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/kahlor/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+           "x": 818,
+          "y": 1433,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/kahlor/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/kahlor/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/kahlor/illust_myth/spine.png"
+      }
+    }
+  },
+    "char39": {
+    "name": "Camila",
+    "order": 58,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1022,
+          "y": 1739,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/camila/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/camila/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/camila/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1124,
+          "y": 1841,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/camila/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/camila/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/camila/illust_skin/spine.png"
+      }
+    }
+  },
+    "char40": {
+    "name": "Caballera futura",
+    "order": 23,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 104,
+          "y": 617,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/caballera_futura/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/caballera_futura/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/caballera_futura/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 308,
+          "y": 821,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/caballera_futura/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/caballera_futura/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/caballera_futura/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 206,
+          "y": 719,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/caballera_futura/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/caballera_futura/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/caballera_futura/illust_skin/spine.png"
+      }
+    }
+  },
+    "char41": {
+    "name": "Estel",
+    "order": 74,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1124,
+          "y": 1739,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/estel/spine.skel",
+        "atlas": "assets/illust/3_stars/estel/spine.atlas",
+        "png": "assets/illust/3_stars/estel/spine.png"
+      }
+    }
+  },
+    "char42": {
+    "name": "Callie",
+    "order": 90,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1022,
+          "y": 107,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/callie/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/callie/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/callie/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1124,
+          "y": 209,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/callie/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/callie/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/callie/illust_myth/spine.png"
+      }
+    }
+  },
+    "char43": {
+    "name": "Dabin",
+    "order": 79,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1124,
+          "y": 617,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/dabin/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/dabin/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/dabin/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1328,
+          "y": 821,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/dabin/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/dabin/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/dabin/illust_myth/spine.png"
+      },
+      "model3": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1226,
+          "y": 719,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/dabin/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/dabin/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/dabin/illust_skin/spine.png"
+      }
+    }
+  },
+    "char44": {
+    "name": "Karina",
+    "order": 605,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1328,
+          "y": 617,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/karina/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/karina/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/karina/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1532,
+          "y": 821,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/karina/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/karina/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/karina/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Ascensión",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1430,
+          "y": 719,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/karina/illust_ascent/spine.skel",
+        "atlas": "assets/illust/2_stars/karina/illust_ascent/spine.atlas",
+        "png": "assets/illust/2_stars/karina/illust_ascent/spine.png"
+      }
+    }
+  },
+    "char45": {
+    "name": "Nati y Sari",
+    "order": 87,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1838,
+          "y": 1229,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/nati/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/nati/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/nati/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1940,
+          "y": 1331,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/nati/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/nati/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/nati/illust_myth/spine.png"
+      }
+    }
+  },
+    "char46": {
+    "name": "Priscila",
+    "order": 43,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 920,
+          "y": 1331,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/priscila/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/priscila/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/priscila/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1124,
+          "y": 1535,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/priscila/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/priscila/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/priscila/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1022,
+          "y": 1433,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/priscila/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/priscila/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/priscila/illust_skin/spine.png"
+      }
+    }
+  },
+    "char47": {
+    "name": "Orca",
+    "order": 37,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 410,
+          "y": 413,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/orca/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/orca/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/orca/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 512,
+          "y": 515,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/orca/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/orca/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/orca/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 614,
+          "y": 617,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/orca/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/orca/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/orca/illust_myth/spine.png"
+      }
+    }
+  },
+    "char48": {
+    "name": "Lena",
+    "order": 78,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1022,
+          "y": 1025,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/lena/spine.skel",
+        "atlas": "assets/illust/3_stars/lena/spine.atlas",
+        "png": "assets/illust/3_stars/lena/spine.png"
+      }
+    }
+  },
+    "char49": {
+    "name": "Srta. Cromo",
+    "order": 50,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1226,
+          "y": 1229,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/srta_cromo/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/srta_cromo/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/srta_cromo/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1328,
+          "y": 1331,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/srta_cromo/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/srta_cromo/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/srta_cromo/illust_kong/spine.png"
+      }
+    }
+  },
+    "char50": {
+    "name": "Xiaoman",
+    "order": 91,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 308,
+          "y": 209,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/xiaoman/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/xiaoman/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/xiaoman/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 410,
+          "y": 311,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/xiaoman/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/xiaoman/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/xiaoman/illust_myth/spine.png"
+      }
+    }
+  },
+    "char51": {
+    "name": "Ara",
+    "order": 45,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1634,
+          "y": 1433,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/ara/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/ara/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/ara/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1736,
+          "y": 1535,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/ara/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/ara/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/ara/illust_kong/spine.png"
+      }
+    }
+  },
+    "char52": {
+    "name": "Amy playera",
+    "order": 63,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1736,
+          "y": 1331,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/summer_amy/spine.skel",
+        "atlas": "assets/illust/3_stars/summer_amy/spine.atlas",
+        "png": "assets/illust/3_stars/summer_amy/spine.png"
+      }
+    }
+  },
+    "char53": {
+    "name": "Ruri",
+    "order": 83,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 920,
+          "y": 515,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/ruri/spine.skel",
+        "atlas": "assets/illust/3_stars/ruri/spine.atlas",
+        "png": "assets/illust/3_stars/ruri/spine.png"
+      }
+    }
+  },
+    "char54": {
+    "name": "AA-72",
+    "order": 47,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1838,
+          "y": 1433,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/AA72/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/AA72/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/AA72/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1940,
+          "y": 1535,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/AA72/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/AA72/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/AA72/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 512,
+          "y": 5,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/AA72/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/AA72/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/AA72/illust_myth/spine.png"
+      }
+    }
+  },
+    "char55": {
+    "name": "Loraine playera",
+    "order": 48,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 614,
+          "y": 107,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/summer_loraine/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/summer_loraine/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/summer_loraine/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 716,
+          "y": 209,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/summer_loraine/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/summer_loraine/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/summer_loraine/illust_kong/spine.png"
+      }
+    }
+  },
+    "char56": {
+    "name": "Rie playera",
+    "order": 94,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 818,
+          "y": 311,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/summer_rie/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/summer_rie/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/summer_rie/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 920,
+          "y": 413,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/summer_rie/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/summer_rie/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/summer_rie/illust_myth/spine.png"
+      }
+    }
+  },
+    "char57": {
+    "name": "Shapira playera",
+    "order": 65,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1022,
+          "y": 515,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/summer_shapira/spine.skel",
+        "atlas": "assets/illust/3_stars/summer_shapira/spine.atlas",
+        "png": "assets/illust/3_stars/summer_shapira/spine.png"
+      }
+    }
+  },
+    "char58": {
+    "name": "Sohee surfista",
+    "order": 30,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1430,
+          "y": 923,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/surfer_sohee/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/surfer_sohee/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/surfer_sohee/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1532,
+          "y": 1025,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/surfer_sohee/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/surfer_sohee/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/surfer_sohee/illust_kong/spine.png"
+      }
+    }
+  },
+    "char59": {
+    "name": "Lacrima",
+    "order": 102,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1838,
+          "y": 1637,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/lacrima/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/lacrima/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/lacrima/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1940,
+          "y": 1739,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/lacrima/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/lacrima/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/lacrima/illust_myth/spine.png"
+      }
+    }
+  },
+    "char60": {
+    "name": "Chriselle",
+    "order": 96,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1430,
+          "y": 1127,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/chriselle/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/chriselle/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/chriselle/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1532,
+          "y": 1229,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/chriselle/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/chriselle/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/chriselle/illust_myth/spine.png"
+      }
+    }
+  },
+    "char61": {
+    "name": "J",
+    "order": 92,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 818,
+          "y": 821,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/j/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/j/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/j/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 920,
+          "y": 923,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/j/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/j/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/j/illust_myth/spine.png"
+      }
+    }
+  },
+    "char62": {
+    "name": "Oghma",
+    "order": 14,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 818,
+          "y": 617,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/oghma/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/oghma/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/oghma/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 920,
+          "y": 719,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/oghma/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/oghma/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/oghma/illust_kong/spine.png"
+      }
+    }
+  },
+    "char63": {
+    "name": "Alef",
+    "order": 15,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 308,
+          "y": 719,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/alef/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/alef/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/alef/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 410,
+          "y": 821,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/alef/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/alef/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/alef/illust_kong/spine.png"
+      }
+    }
+  },
+    "char64": {
+    "name": "Vishuvac",
+    "order": 11,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 308,
+          "y": 923,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/vishuvac/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/vishuvac/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/vishuvac/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 410,
+          "y": 1025,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/vishuvac/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/vishuvac/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/vishuvac/illust_kong/spine.png"
+      }
+    }
+  },
+    "char65": {
+    "name": "Garam",
+    "order": 18,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 920,
+          "y": 1433,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/garam/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/garam/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/garam/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1124,
+          "y": 1637,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/garam/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/garam/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/garam/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1022,
+          "y": 1535,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/garam/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/garam/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/garam/illust_skin/spine.png"
+      }
+    }
+  },
+    "char66": {
+    "name": "Rue",
+    "order": 20,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1022,
+          "y": 821,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/rue/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/rue/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/rue/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1124,
+          "y": 923,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/rue/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/rue/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/rue/illust_kong/spine.png"
+      }
+    }
+  },
+    "char67": {
+    "name": "Veronica",
+    "order": 24,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 206,
+          "y": 5,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/veronica/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/veronica/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/veronica/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 308,
+          "y": 107,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/veronica/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/veronica/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/veronica/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 410,
+          "y": 209,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/veronica/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/veronica/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/veronica/illust_skin/spine.png"
+      }
+    }
+  },
+    "char68": {
+    "name": "Noxia",
+    "order": 25,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1634,
+          "y": 1637,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/noxia/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/noxia/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/noxia/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1838,
+          "y": 1841,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/noxia/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/noxia/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/noxia/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1736,
+          "y": 1739,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/noxia/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/noxia/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/noxia/illust_skin/spine.png"
+      }
+    }
+  },
+    "char69": {
+    "name": "MK-99",
+    "order": 27,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 206,
+          "y": 209,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/MK99/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/MK99/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/MK99/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 308,
+          "y": 311,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/MK99/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/MK99/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/MK99/illust_kong/spine.png"
+      }
+    }
+  },
+    "char70": {
+    "name": "Eleanor",
+    "order": 32,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 104,
+          "y": 821,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/eleanor/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/eleanor/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/eleanor/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 206,
+          "y": 923,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/eleanor/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/eleanor/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/eleanor/illust_kong/spine.png"
+      }
+    }
+  },
+    "char71": {
+    "name": "Centella",
+    "order": 33,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 512,
+          "y": 1127,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/centella/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/centella/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/centella/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 614,
+          "y": 1229,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/centella/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/centella/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/centella/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1532,
+          "y": 617,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/centella/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/centella/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/centella/illust_myth/spine.png"
+      },
+      "model4": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1634,
+          "y": 719,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/centella/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/centella/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/centella/illust_skin/spine.png"
+      }
+    }
+  },
+    "char72": {
+    "name": "Kamael",
+    "order": 35,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1328,
+          "y": 1637,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/kamael/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/kamael/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/kamael/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1532,
+          "y": 1841,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/kamael/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/kamael/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/kamael/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1634,
+          "y": 1943,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/kamael/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/kamael/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/kamael/illust_myth/spine.png"
+      },
+      "model4": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1430,
+          "y": 1739,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/kamael/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/kamael/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/kamael/illust_skin/spine.png"
+      }
+    }
+  },
+    "char73": {
+    "name": "MK-2",
+    "order": 36,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1838,
+          "y": 1127,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/MK2/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/MK2/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/MK2/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1940,
+          "y": 1229,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/MK2/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/MK2/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/MK2/illust_kong/spine.png"
+      }
+    }
+  },
+    "char74": {
+    "name": "Kanna",
+    "order": 38,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1328,
+          "y": 515,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/kanna/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/kanna/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/kanna/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1532,
+          "y": 719,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/kanna/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/kanna/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/kanna/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1430,
+          "y": 617,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/kanna/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/kanna/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/kanna/illust_skin/spine.png"
+      }
+    }
+  },
+    "char75": {
+    "name": "Hana",
+    "order": 39,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1226,
+          "y": 1637,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/hana/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/hana/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/hana/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1430,
+          "y": 1841,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/hana/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/hana/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/hana/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1328,
+          "y": 1739,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/hana/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/hana/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/hana/illust_skin/spine.png"
+      }
+    }
+  },
+    "char76": {
+    "name": "Carol",
+    "order": 40,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 512,
+          "y": 1943,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/carol/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/carol/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/carol/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 2,
+          "y": 1331,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/carol/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/carol/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/carol/illust_kong/spine.png"
+      }
+    }
+  },
+    "char77": {
+    "name": "Clara",
+    "order": 41,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1226,
+          "y": 1025,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/clara/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/clara/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/clara/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1328,
+          "y": 1127,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/clara/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/clara/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/clara/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1430,
+          "y": 1229,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/clara/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/clara/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/clara/illust_myth/spine.png"
+      }
+    }
+  },
+    "char78": {
+    "name": "Parvati",
+    "order": 42,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 716,
+          "y": 617,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/parvati/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/parvati/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/parvati/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 818,
+          "y": 719,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/parvati/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/parvati/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/parvati/illust_kong/spine.png"
+      }
+    }
+  },
+    "char79": {
+    "name": "Claudio",
+    "order": 44,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1124,
+          "y": 413,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/claudio/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/claudio/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/claudio/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1226,
+          "y": 515,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/claudio/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/claudio/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/claudio/illust_kong/spine.png"
+      }
+    }
+  },
+    "char80": {
+    "name": "Rey",
+    "order": 46,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 410,
+          "y": 107,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/rey/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/rey/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/rey/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 512,
+          "y": 209,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/rey/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/rey/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/rey/illust_kong/spine.png"
+      }
+    }
+  },
+    "char81": {
+    "name": "Trio panda loco",
+    "order": 49,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 512,
+          "y": 413,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/trio_panda_loco/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/trio_panda_loco/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/trio_panda_loco/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 614,
+          "y": 515,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/trio_panda_loco/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/trio_panda_loco/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/trio_panda_loco/illust_kong/spine.png"
+      }
+    }
+  },
+    "char82": {
+    "name": "Valencia",
+    "order": 51,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1022,
+          "y": 311,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/valencia/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/valencia/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/valencia/illust_base/spine.png"
+      }
+    }
+  },
+    "char83": {
+    "name": "Crosselle",
+    "order": 52,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 410,
+          "y": 1433,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/crosselle/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/crosselle/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/crosselle/illust_base/spine.png"
+      }
+    }
+  },
+    "char84": {
+    "name": "Sumire",
+    "order": 54,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1124,
+          "y": 1331,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/sumire/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/sumire/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/sumire/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1226,
+          "y": 1433,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/sumire/illust_kong/spine.skel",
+        "atlas": "assets/illust/3_stars/sumire/illust_kong/spine.atlas",
+        "png": "assets/illust/3_stars/sumire/illust_kong/spine.png"
+      }
+    }
+  },
+    "char85": {
+    "name": "Paimón",
+    "order": 55,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 512,
+          "y": 1535,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/paimon/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/paimon/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/paimon/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 614,
+          "y": 1637,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/paimon/illust_skin/spine.skel",
+        "atlas": "assets/illust/3_stars/paimon/illust_skin/spine.atlas",
+        "png": "assets/illust/3_stars/paimon/illust_skin/spine.png"
+      }
+    }
+  },
+    "char86": {
+    "name": "Rosetta",
+    "order": 56,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 308,
+          "y": 1229,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/rosetta/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/rosetta/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/rosetta/illust_base/spine.png"
+      }
+    }
+  },
+    "char87": {
+    "name": "Nieve blanca",
+    "order": 57,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1226,
+          "y": 413,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/nieve_blanca/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/nieve_blanca/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/nieve_blanca/illust_base/spine.png"
+      }
+    }
+  },
+    "char88": {
+    "name": "Kia H.E.R.O.S",
+    "order": 59,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1532,
+          "y": 1943,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/kia/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/kia/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/kia/illust_base/spine.png"
+      }
+    }
+  },
+    "char89": {
+    "name": "Ameris",
+    "order": 61,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 104,
+          "y": 923,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/ameris/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/ameris/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/ameris/illust_base/spine.png"
+      }
+    }
+  },
+    "char90": {
+    "name": "Morrian",
+    "order": 66,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 206,
+          "y": 1229,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/morrian/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/morrian/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/morrian/illust_base/spine.png"
+      }
+    }
+  },
+    "char91": {
+    "name": "Win Ling",
+    "order": 68,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 716,
+          "y": 413,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/win_ling/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/win_ling/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/win_ling/illust_base/spine.png"
+      }
+    }
+  },
+    "char92": {
+    "name": "Odile",
+    "order": 69,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 308,
+          "y": 1331,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/odile/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/odile/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/odile/illust_base/spine.png"
+      }
+    }
+  },
+    "char93": {
+    "name": "Angie",
+    "order": 71,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 614,
+          "y": 1025,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/angie/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/angie/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/angie/illust_base/spine.png"
+      }
+    }
+  },
+    "char94": {
+    "name": "Doctor Peste",
+    "order": 72,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1430,
+          "y": 1331,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/doctor_peste/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/doctor_peste/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/doctor_peste/illust_base/spine.png"
+      }
+    }
+  },
+    "char95": {
+    "name": "Yuna",
+    "order": 73,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1124,
+          "y": 311,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/yuna/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/yuna/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/yuna/illust_base/spine.png"
+      }
+    }
+  },
+    "char96": {
+    "name": "Toga",
+    "order": 75,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 206,
+          "y": 617,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/toga/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/toga/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/toga/illust_base/spine.png"
+      }
+    }
+  },
+    "char97": {
+    "name": "Corneta",
+    "order": 77,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1328,
+          "y": 1229,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/corneta/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/corneta/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/corneta/illust_base/spine.png"
+      }
+    }
+  },
+    "char98": {
+    "name": "Rachel playera",
+    "order": 80,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 410,
+          "y": 1841,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/summer_rachel/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/summer_rachel/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/summer_rachel/illust_base/spine.png"
+      }
+    }
+  },
+    "char99": {
+    "name": "Saya",
+    "order": 81,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 920,
+          "y": 1637,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/saya/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/saya/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/saya/illust_base/spine.png"
+      }
+    }
+  },
+    "char100": {
+    "name": "Anna",
+    "order": 82,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 308,
+          "y": 5,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/anna/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/anna/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/anna/illust_base/spine.png"
+      }
+    }
+  },
+    "char101": {
+    "name": "Dohwa",
+    "order": 84,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1328,
+          "y": 1025,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/dohwa/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/dohwa/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/dohwa/illust_base/spine.png"
+      }
+    }
+  },
+    "char102": {
+    "name": "Natsume",
+    "order": 85,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 104,
+          "y": 5,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/natsume/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/natsume/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/natsume/illust_base/spine.png"
+      }
+    }
+  },
+    "char103": {
+    "name": "Tasha",
+    "order": 86,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1226,
+          "y": 1535,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/tasha/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/tasha/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/tasha/illust_base/spine.png"
+      }
+    }
+  },
+    "char104": {
+    "name": "Ameris San Valentine",
+    "order": 88,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 920,
+          "y": 209,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/valentine_ameris/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/valentine_ameris/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/valentine_ameris/illust_base/spine.png"
+      }
+    }
+  },
+    "char105": {
+    "name": "Girgas whiteday",
+    "order": 89,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1634,
+          "y": 821,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/whiteday_girgas/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/whiteday_girgas/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/whiteday_girgas/illust_base/spine.png"
+      }
+    }
+  },
+    "char106": {
+    "name": "Iluni",
+    "order": 98,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 410,
+          "y": 1127,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/iluni/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/iluni/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/iluni/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 512,
+          "y": 1229,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/iluni/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/iluni/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/iluni/illust_myth/spine.png"
+      }
+    }
+  },
+    "char107": {
+    "name": "Noelia",
+    "order": 101,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 2,
+          "y": 413,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/noelia/illust_base/spine.skel",
+        "atlas": "assets/illust/3_stars/noelia/illust_base/spine.atlas",
+        "png": "assets/illust/3_stars/noelia/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Mito",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 104,
+          "y": 515,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/3_stars/noelia/illust_myth/spine.skel",
+        "atlas": "assets/illust/3_stars/noelia/illust_myth/spine.atlas",
+        "png": "assets/illust/3_stars/noelia/illust_myth/spine.png"
+      }
+    }
+  },
+    "char108": {
+    "name": "Eva",
+    "order": 602,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 308,
+          "y": 515,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/eva/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/eva/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/eva/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 410,
+          "y": 617,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/eva/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/eva/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/eva/illust_kong/spine.png"
+      }
+    }
+  },
+    "char109": {
+    "name": "Bestia blanca",
+    "order": 604,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 920,
+          "y": 821,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/white_beast/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/white_beast/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/white_beast/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1022,
+          "y": 923,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/white_beast/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/white_beast/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/white_beast/illust_kong/spine.png"
+      }
+    }
+  },
+    "char110": {
+    "name": "Loraine",
+    "order": 606,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 2,
+          "y": 5,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/loraine/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/loraine/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/loraine/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 104,
+          "y": 107,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/loraine/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/loraine/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/loraine/illust_kong/spine.png"
+      }
+    }
+  },
+    "char111": {
+    "name": "Lavi",
+    "order": 607,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 716,
+          "y": 1739,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/lavi/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/lavi/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/lavi/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 818,
+          "y": 1841,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/lavi/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/lavi/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/lavi/illust_kong/spine.png"
+      }
+    }
+  },
+    "char112": {
+    "name": "Favi",
+    "order": 608,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 410,
+          "y": 1535,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/fabi/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/fabi/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/fabi/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 512,
+          "y": 1637,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/fabi/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/fabi/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/fabi/illust_kong/spine.png"
+      }
+    }
+  },
+    "char113": {
+    "name": "Aoba",
+    "order": 609,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1736,
+          "y": 1943,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/aoba/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/aoba/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/aoba/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 2,
+          "y": 107,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/aoba/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/aoba/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/aoba/illust_kong/spine.png"
+      }
+    }
+  },
+    "char114": {
+    "name": "Rachel",
+    "order": 611,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1124,
+          "y": 1025,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/rachel/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/rachel/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/rachel/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1226,
+          "y": 1127,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/rachel/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/rachel/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/rachel/illust_kong/spine.png"
+      }
+    }
+  },
+    "char115": {
+    "name": "Hekate",
+    "order": 612,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1124,
+          "y": 821,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/hekate/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/hekate/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/hekate/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1226,
+          "y": 923,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/hekate/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/hekate/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/hekate/illust_kong/spine.png"
+      }
+    }
+  },
+    "char116": {
+    "name": "Coco",
+    "order": 613,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 512,
+          "y": 821,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/coco/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/coco/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/coco/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 716,
+          "y": 1025,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/coco/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/coco/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/coco/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Ascensión",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 614,
+          "y": 923,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/coco/illust_ascent/spine.skel",
+        "atlas": "assets/illust/2_stars/coco/illust_ascent/spine.atlas",
+        "png": "assets/illust/2_stars/coco/illust_ascent/spine.png"
+      }
+    }
+  },
+    "char117": {
+    "name": "Marianne",
+    "order": 614,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1124,
+          "y": 515,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/marianne/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/marianne/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/marianne/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1226,
+          "y": 617,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/marianne/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/marianne/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/marianne/illust_kong/spine.png"
+      }
+    }
+  },
+    "char118": {
+    "name": "Sohee",
+    "order": 615,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1226,
+          "y": 1739,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/sohee/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/sohee/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/sohee/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1328,
+          "y": 1841,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/sohee/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/sohee/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/sohee/illust_kong/spine.png"
+      }
+    }
+  },
+    "char119": {
+    "name": "Mei",
+    "order": 616,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 308,
+          "y": 1535,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/mei/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/mei/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/mei/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 512,
+          "y": 1739,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/mei/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/mei/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/mei/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Ascensión",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 410,
+          "y": 1637,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/mei/illust_ascent/spine.skel",
+        "atlas": "assets/illust/2_stars/mei/illust_ascent/spine.atlas",
+        "png": "assets/illust/2_stars/mei/illust_ascent/spine.png"
+      }
+    }
+  },
+    "char120": {
+    "name": "Marvin",
+    "order": 617,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 104,
+          "y": 1025,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/marvin/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/marvin/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/marvin/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 206,
+          "y": 1127,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/marvin/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/marvin/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/marvin/illust_kong/spine.png"
+      }
+    }
+  },
+    "char121": {
+    "name": "Craig",
+    "order": 618,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 614,
+          "y": 5,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/craig/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/craig/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/craig/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 818,
+          "y": 209,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/craig/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/craig/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/craig/illust_kong/spine.png"
+      }
+    }
+  },
+    "char122": {
+    "name": "Akayuki",
+    "order": 619,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 206,
+          "y": 1943,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/akayuki/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/akayuki/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/akayuki/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 2,
+          "y": 1637,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/akayuki/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/akayuki/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/akayuki/illust_kong/spine.png"
+      }
+    }
+  },
+    "char123": {
+    "name": "Ranpang",
+    "order": 620,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 716,
+          "y": 1637,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/ranpang/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/ranpang/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/ranpang/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 818,
+          "y": 1739,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/ranpang/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/ranpang/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/ranpang/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Skin especial",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 920,
+          "y": 1841,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/ranpang/illust_skin/spine.skel",
+        "atlas": "assets/illust/2_stars/ranpang/illust_skin/spine.atlas",
+        "png": "assets/illust/2_stars/ranpang/illust_skin/spine.png"
+      }
+    }
+  },
+    "char124": {
+    "name": "Yuze",
+    "order": 621,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1022,
+          "y": 617,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/yuze/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/yuze/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/yuze/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1124,
+          "y": 719,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/yuze/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/yuze/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/yuze/illust_kong/spine.png"
+      }
+    }
+  },
+    "char125": {
+    "name": "Aisha",
+    "order": 622,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1430,
+          "y": 515,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/aisha/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/aisha/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/aisha/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1940,
+          "y": 1637,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/aisha/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/aisha/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/aisha/illust_kong/spine.png"
+      }
+    }
+  },
+    "char126": {
+    "name": "Shapira",
+    "order": 623,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1736,
+          "y": 1433,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/shapira/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/shapira/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/shapira/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1838,
+          "y": 1535,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/shapira/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/shapira/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/shapira/illust_kong/spine.png"
+      }
+    }
+  },
+    "char127": {
+    "name": "Dolf",
+    "order": 624,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1838,
+          "y": 1331,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/dolf/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/dolf/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/dolf/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1940,
+          "y": 1433,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/dolf/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/dolf/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/dolf/illust_kong/spine.png"
+      }
+    }
+  },
+    "char128": {
+    "name": "Amy",
+    "order": 625,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1736,
+          "y": 1841,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/amy/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/amy/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/amy/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1838,
+          "y": 1943,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/amy/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/amy/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/amy/illust_kong/spine.png"
+      }
+    }
+  },
+    "char129": {
+    "name": "Girgas",
+    "order": 626,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1022,
+          "y": 1943,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/girgas/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/girgas/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/girgas/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 2,
+          "y": 821,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/girgas/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/girgas/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/girgas/illust_kong/spine.png"
+      }
+    }
+  },
+    "char130": {
+    "name": "Catherine",
+    "order": 627,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1634,
+          "y": 1127,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/catherine/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/catherine/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/catherine/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1736,
+          "y": 1229,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/catherine/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/catherine/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/catherine/illust_kong/spine.png"
+      }
+    }
+  },
+    "char131": {
+    "name": "Rie",
+    "order": 628,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 410,
+          "y": 1943,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/rie/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/rie/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/rie/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 2,
+          "y": 1433,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/rie/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/rie/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/rie/illust_kong/spine.png"
+      }
+    }
+  },
+    "char132": {
+    "name": "Neva",
+    "order": 629,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1634,
+          "y": 923,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/neva/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/neva/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/neva/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 1736,
+          "y": 1025,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/neva/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/neva/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/neva/illust_kong/spine.png"
+      }
+    }
+  },
+    "char133": {
+    "name": "fei",
+    "order": 616,
+    "models": {
+      "model1": {
+        "name": "Global",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 2,
+          "y": 1229,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/fei/illust_base/spine.skel",
+        "atlas": "assets/illust/2_stars/fei/illust_base/spine.atlas",
+        "png": "assets/illust/2_stars/fei/illust_base/spine.png"
+      },
+      "model2": {
+        "name": "Anime",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 206,
+          "y": 1433,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/fei/illust_kong/spine.skel",
+        "atlas": "assets/illust/2_stars/fei/illust_kong/spine.atlas",
+        "png": "assets/illust/2_stars/fei/illust_kong/spine.png"
+      },
+      "model3": {
+        "name": "Ascensión",
+        "icon": {
+          "sheet": "assets/icons/icons.png",
+          "x": 104,
+          "y": 1331,
+          "w": 100,
+          "h": 100
+        },
+        "skel": "assets/illust/2_stars/fei/illust_ascent/spine.skel",
+        "atlas": "assets/illust/2_stars/fei/illust_ascent/spine.atlas",
+        "png": "assets/illust/2_stars/fei/illust_ascent/spine.png"
+      }
+    }
+  }
+}
