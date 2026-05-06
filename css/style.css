@@ -86,17 +86,23 @@ canvas {
   LISTA DE ANIMACIONES (#animList)
   Aparece debajo de las tarjetas de modelos en la vista del armario.
 ================================================================ */
-#animSection {
+#animSectionWrapper {
   position: fixed;
   left: 100%;
-  top: 60%;
-  margin-top: 14px;
+  top: 50%;
+  width: 200px;
+  z-index: 5;
+}
+
+#animSection {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 14px);
   overflow-y: auto;
   max-height: 200px;
   scrollbar-width: none;
   user-select: none;
-  z-index: 2;
-  width: 200px;
+  width: 100%;
 }
 
 #animSection::-webkit-scrollbar {
@@ -148,9 +154,10 @@ canvas {
 }
 
 #AnimTitle {
-  position: fixed;
-  left: 100%;
-  top: 50%;
+  position: relative;
+  left: auto;
+  top: auto;
+  margin: 0;
 
   font-family: 'GameFont';
   font-size: 24px;

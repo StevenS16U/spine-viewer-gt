@@ -102,17 +102,28 @@ function populateBgSelect() {
 // ================================================================
 function resize() {
   const canvas = document.getElementById("c");
-  const dpr    = window.devicePixelRatio || 1;
-  const w      = window.innerWidth;
-  const h      = window.innerHeight;
+  if (!canvas) return;
+
+  const dpr = window.devicePixelRatio || 1;
+  const w = Math.round(window.innerWidth || canvas.clientWidth || canvas.getBoundingClientRect().width);
+  const h = Math.round(window.innerHeight || canvas.clientHeight || canvas.getBoundingClientRect().height);
 
   canvas.style.width  = w + 'px';
   canvas.style.height = h + 'px';
-  canvas.width  = w * dpr;
-  canvas.height = h * dpr;
+  canvas.width  = Math.round(w * dpr);
+  canvas.height = Math.round(h * dpr);
 
-  if (spRenderer) {
+  if (spCtx && spCtx.gl) {
+    spCtx.gl.viewport(0, 0, canvas.width, canvas.height);
+  }
+
+  if (spRenderer && typeof spRenderer.resize === 'function') {
+    spRenderer.resize(spine.webgl.ResizeMode.Expand);
+  } else if (spRenderer) {
     spRenderer.camera.setViewport(w, h);
+    if (typeof spRenderer.camera.update === 'function') {
+      spRenderer.camera.update();
+    }
   }
 
   if (spSkeleton) {
@@ -1000,6 +1011,18 @@ window.onload = async () => {
 
   resize();
 
-  // Añadir listener para resize
-  window.addEventListener("resize", resize);
+  // Añadir listeners para cambios de tamaño y fullscreen
+  const scheduleResize = () => {
+    resize();
+    requestAnimationFrame(resize);
+    requestAnimationFrame(() => requestAnimationFrame(resize));
+    setTimeout(resize, 100);
+  };
+
+  window.addEventListener("resize", scheduleResize);
+  window.addEventListener("orientationchange", scheduleResize);
+  document.addEventListener("fullscreenchange", scheduleResize);
+  document.addEventListener("webkitfullscreenchange", scheduleResize);
+  document.addEventListener("mozfullscreenchange", scheduleResize);
+  document.addEventListener("MSFullscreenChange", scheduleResize);
 };
